@@ -48,8 +48,11 @@ export const getDb = async () => {
     const tx = jateDb.transaction("jate", "readonly");
 
     const store = tx.objectStore("jate");
+
     const id = 1;
+
     const req = store.get({ id });
+    
     const result = await req;
 
     console.log("All Data", result);
