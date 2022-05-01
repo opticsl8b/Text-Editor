@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
-export const putDb = async () => {
+export const putDb = async (content) => {
   try {
     console.log("Updating Process");
     // create connection to db and pick the version
@@ -23,20 +23,20 @@ export const putDb = async () => {
     
     const store = tx.objectStore("jate");
     
-    const req = store.get({ id:1,data:content });
+    const req = store.put({ id:1,data:content });
     
     const result = await req;
 
-    console.log("All Data", result);
+    console.log("Updated Key:", result);
 
     return result;
   } catch (err) {
-    console.log(err);
+    console.error("putDb not implemented");
   }
 
 };
 
-console.error("putDb not implemented");
+
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
@@ -59,10 +59,10 @@ export const getDb = async () => {
 
     return result;
   } catch (err) {
-    console.log(err);
+    console.error("getDb not implemented");
   }
 };
 
-console.error("getDb not implemented");
+
 
 initdb();
