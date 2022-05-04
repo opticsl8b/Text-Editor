@@ -124,7 +124,7 @@ THEN I download my web application as an icon on my desktop
 <br>
 
 ```
-https://github.com/opticsl8b/Social-Network-API
+https://github.com/opticsl8b/Text-Editor
 ```
 
 <br><hr>
