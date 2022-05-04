@@ -123,11 +123,15 @@ THEN I download my web application as an icon on my desktop
 <h3 align="center">Link to the Repo</h3>
 <br>
 
-https://github.com/opticsl8b/Note-Taker
+```
+https://github.com/opticsl8b/Social-Network-API
+```
 
 <br><hr>
 <hr>
 <h3 align="center">App Heroku Link</h3>
 <br>
 
-https://github.com/opticsl8b/Note-Taker
+```
+https://text-editor-gch.herokuapp.com/
+```
